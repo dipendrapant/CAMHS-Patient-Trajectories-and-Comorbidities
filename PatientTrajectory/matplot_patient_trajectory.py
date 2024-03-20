@@ -86,7 +86,7 @@ class MatplotlibPatientTrajectory:
         original_df["episode_end_date"] = pd.to_datetime(
             original_df["episode_end_date"], errors="coerce"
         )
-        original_df = original_df.sort_values(by=["age"])
+        original_df = original_df.sort_values(by=["age", "Length_of_Episode"])
         # original_df = original_df.sort_values(by=["pasient"])
         return original_df
 
