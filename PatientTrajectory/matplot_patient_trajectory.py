@@ -86,8 +86,9 @@ class MatplotlibPatientTrajectory:
         original_df["episode_end_date"] = pd.to_datetime(
             original_df["episode_end_date"], errors="coerce"
         )
-        original_df = original_df.sort_values(by=["age", "Length_of_Episode"])
         # original_df = original_df.sort_values(by=["pasient"])
+        original_df = original_df.sort_values(by=["initial_age", "Length_of_Episode"])
+
         return original_df
 
     def patient_timeline_plot_yearly(self, original_df, ax, cmap, unique_patients):
@@ -145,7 +146,7 @@ class MatplotlibPatientTrajectory:
         ax.set_yticks(range(len(unique_patients)))
         ax.set_yticklabels(unique_patients)
         ax.set_xlim(
-            original_df["age"].min(),
+            (original_df["age"].min() - 0.08),
             18,
         )
         ax.grid(True, linewidth=0.05)
@@ -163,8 +164,8 @@ class MatplotlibPatientTrajectoryMiddleChildhood:
         original_df["episode_end_date"] = pd.to_datetime(
             original_df["episode_end_date"], errors="coerce"
         )
-        original_df = original_df.sort_values(by=["age", "Length_of_Episode"])
         # original_df = original_df.sort_values(by=["pasient"])
+        original_df = original_df.sort_values(by=["initial_age", "Length_of_Episode"])
         return original_df
 
     def patient_timeline_plot_yearly(self, original_df, ax, cmap, unique_patients):
@@ -208,7 +209,7 @@ class MatplotlibPatientTrajectoryMiddleChildhood:
         ax.set_yticks(range(len(unique_patients)))
         ax.set_yticklabels(unique_patients)
         ax.set_xlim(
-            (original_df["age"].min() - 1),
+            (original_df["age"].min() - 0.08),
             18,
         )
         ax.grid(True, linewidth=0.05)
@@ -227,8 +228,8 @@ class MatplotlibPatientTrajectoryTeenager:
         original_df["episode_end_date"] = pd.to_datetime(
             original_df["episode_end_date"], errors="coerce"
         )
-        original_df = original_df.sort_values(by=["age", "Length_of_Episode"])
         # original_df = original_df.sort_values(by=["pasient"])
+        original_df = original_df.sort_values(by=["initial_age", "Length_of_Episode"])
         return original_df
 
     def patient_timeline_plot_yearly(self, original_df, ax, cmap, unique_patients):
@@ -272,7 +273,7 @@ class MatplotlibPatientTrajectoryTeenager:
         ax.set_yticks(range(len(unique_patients)))
         ax.set_yticklabels(unique_patients)
         ax.set_xlim(
-            (original_df["age"].min() - 1),
+            (original_df["age"].min() - 0.08),
             18,
         )
         ax.grid(True, linewidth=0.05)
