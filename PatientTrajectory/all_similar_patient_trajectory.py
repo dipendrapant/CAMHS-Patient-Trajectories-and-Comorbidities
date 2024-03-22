@@ -30,7 +30,7 @@ class MatplotlibPatientTrajectory:
                 case_cluster = case["cluster"]
 
                 age_start = case_age
-                age_end = round(age_start + (case_end - case_start).days / 365.2425)
+                age_end = age_start + (case_end - case_start).days / 365.2425
 
                 ax.plot(
                     [age_start, age_end],
