@@ -40,15 +40,15 @@ class MatplotlibPatientTrajectory:
                 )
 
         ax.set_xlim(
-            (original_df["age"].min() - 0.08),
+            original_df["age"].min(),
             18,
         )
         ax.set_ylim(
             0,
         )
         ax.grid(True, linewidth=0.05)
-        ax.set_xlabel("Age at Episode of Care")
-        ax.set_ylabel("Patients")
+        # ax.set_xlabel("Age at Episode of Care")
+        # ax.set_ylabel("Patients")
 
 
 class MatplotlibPatientTrajectoryMiddleChildhood:
@@ -84,15 +84,15 @@ class MatplotlibPatientTrajectoryMiddleChildhood:
                 )
 
         ax.set_xlim(
-            (original_df["age"].min() - 0.08),
+            original_df["age"].min(),
             18,
         )
         ax.set_ylim(
             0,
         )
         ax.grid(True, linewidth=0.05)
-        ax.set_xlabel("Age at Episode of Care")
-        ax.set_ylabel("Patients")
+        # ax.set_xlabel("Age at Episode of Care")
+        # ax.set_ylabel("Patients")
 
 
 class MatplotlibPatientTrajectoryTeenager:
@@ -128,12 +128,12 @@ class MatplotlibPatientTrajectoryTeenager:
                 )
 
         ax.set_xlim(
-            (original_df["age"].min() - 0.08),
+            original_df["age"].min(),
             18,
         )
         ax.set_ylim(
             0,
         )
         ax.grid(True, linewidth=0.05)
-        ax.set_xlabel("Age at Episode of Care")
-        ax.set_ylabel("Patients")
+        # ax.set_xlabel("Age at Episode of Care")
+        # ax.set_ylabel("Patients")
