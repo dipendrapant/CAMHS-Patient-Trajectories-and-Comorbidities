@@ -46,9 +46,9 @@ class MatplotlibPatientTrajectory:
         ax.set_ylim(
             0,
         )
-        ax.grid(True, linewidth=0.05)
-        # ax.set_xlabel("Age at Episode of Care")
-        # ax.set_ylabel("Patients")
+        ax.set_xticks([0, 6, 12, 18])
+        for x in [0, 6, 12, 18]:
+            ax.axvline(x, color="gray", linewidth=3, linestyle="--")
 
 
 class MatplotlibPatientTrajectoryMiddleChildhood:
@@ -90,9 +90,9 @@ class MatplotlibPatientTrajectoryMiddleChildhood:
         ax.set_ylim(
             0,
         )
-        ax.grid(True, linewidth=0.05)
-        # ax.set_xlabel("Age at Episode of Care")
-        # ax.set_ylabel("Patients")
+        ax.set_xticks([0, 6, 12, 18])
+        for x in [0, 6, 12, 18]:
+            ax.axvline(x, color="gray", linewidth=3, linestyle="--")
 
 
 class MatplotlibPatientTrajectoryTeenager:
@@ -134,6 +134,6 @@ class MatplotlibPatientTrajectoryTeenager:
         ax.set_ylim(
             0,
         )
-        ax.grid(True, linewidth=0.05)
-        # ax.set_xlabel("Age at Episode of Care")
-        # ax.set_ylabel("Patients")
+        ax.set_xticks([0, 6, 12, 18])
+        for x in [0, 6, 12, 18]:
+            ax.axvline(x, color="gray", linewidth=3, linestyle="--")
