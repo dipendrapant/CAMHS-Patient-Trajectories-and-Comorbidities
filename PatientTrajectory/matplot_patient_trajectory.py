@@ -34,7 +34,7 @@ class MatplotlibPatientTrajectory:
                 case_cluster = case["cluster"]
                 case_medication = case["actual_med_Full_ATC"]
                 # Round case_age to 1 decimal float only
-                label_demographics = f"{round(case_age, 1)} : {case_cluster}: {case_count_visit}: {case_medication} :{case_diag} "
+                label_demographics = f"{round(case_age, 1)} : {case_count_visit}: {case_medication} :{case_diag} "
                 # label_diagnosis = f"{case_medication} :{case_diag}"
                 age_start = case_age
                 age_end = age_start + (case_end - case_start).days / 365.2425
@@ -98,7 +98,7 @@ class MatplotlibPatientTrajectoryMiddleChildhood:
                 case_cluster = case["cluster"]
                 case_medication = case["actual_med_Full_ATC"]
                 # Round case_age to 1 decimal float only
-                label_demographics = f"{round(case_age, 1)} : {case_cluster}: {case_count_visit}: {case_medication} :{case_diag} "
+                label_demographics = f"{round(case_age, 1)} : {case_count_visit}: {case_medication} :{case_diag} "
                 # label_diagnosis = f"{case_medication} :{case_diag}"
                 age_start = case_age
                 age_end = age_start + (case_end - case_start).days / 365.2425
@@ -163,7 +163,7 @@ class MatplotlibPatientTrajectoryTeenager:
                 case_cluster = case["cluster"]
                 case_medication = case["actual_med_Full_ATC"]
                 # Round case_age to 1 decimal float only
-                label_demographics = f"{round(case_age, 1)} : {case_cluster}: {case_count_visit}: {case_medication} :{case_diag} "
+                label_demographics = f"{round(case_age, 1)} : {case_count_visit}: {case_medication} :{case_diag} "
                 # label_diagnosis = f"{case_medication} :{case_diag}"
                 age_start = case_age
                 age_end = age_start + (case_end - case_start).days / 365.2425
