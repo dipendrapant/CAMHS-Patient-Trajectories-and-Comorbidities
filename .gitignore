@@ -160,7 +160,8 @@ cython_debug/
 #.idea/
 
 Data/
-Figures/
+Figures/graph/
+Figures/piechart/
+Figures/graph/
 *.png
-*.jpg
 *.jpeg
