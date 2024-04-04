@@ -8,4 +8,6 @@ import os
 import matplotlib.pyplot as plt
 import networkx as nx
 import pandas as pd
+from PIL import Image
 from dotenv import load_dotenv
+
