@@ -1,5 +1,5 @@
 # Project Title
-Article : Visualizing and Evaluating Patient Trajectories and Comorbidities in Child and Adolescent Mental Health
+Article : Episodes of care based patient trajectory and co-occurrence visualization: A CAMHS study
 
 
 ## Description
